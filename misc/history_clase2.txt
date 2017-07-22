@@ -1,0 +1,404 @@
+    1  su - academia
+    2  exit
+    3  su - academia 
+    4  exit
+    5  echo $var3
+    6  modprobe vboxdrv
+    7  #modprobe vboxdrv
+    8  vboxdrv
+    9  var=1
+   10  echo var
+   11  echo $var
+   12  echo {$var}
+   13  var2=2
+   14  echo $var2+$var1
+   15  echo $var2+$var
+   16  result=$var+$var2
+   17  echo $result
+   18  clear
+   19  var=1
+   20  var2=2
+   21  export var2
+   22  export var3=123
+   23  echo $var3
+   24  set
+   25  clear
+   26  echo ${PATH}
+   27  clear
+   28  tail -f .bash_history 
+   29  ls -l
+   30  tail -f .bash_history 
+   31  exit
+   32  tail -f .bash_history 
+   33  tail -f .bash_history >/home/estudiantes/tail.txt
+   34  exit
+   35  tail -f .bash_history 
+   36  tail -f .bash_history clear
+   37  clear
+   38  clear
+   39  exit
+   40  tail -f .bash_history 
+   41  history
+   42  bash_profile
+   43  echo bashrc
+   44  bashrc
+   45  apt install terminator
+   46  clear
+   47  cat .bashrc
+   48  ls -l
+   49  man ls
+   50  ls -a
+   51  man cal
+   52  cal
+   53  man echo
+   54  clear
+   55  history >history.txt
+   56  less
+   57  less history.txt
+   58  man grep
+   59  grep -clear -history.txt
+   60  grep --help
+   61  grep clear history.txt
+   62  man 5
+   63  man 5 passwd
+   64  man passwd
+   65  man -k passwd
+   66  man -f passwd
+   67  man 1 passwd
+   68  whatis passwd
+   69  info
+   70  info ls 
+   71  pwd
+   72  sudo su
+   73  su - soporte
+   74  su - academia
+   75  ip -4 addr
+   76  su soporte
+   77  ls ..
+   78  su - academia
+   79  apt-cache show mailutils
+   80  su - academia
+   81  telnet 10.124.18.220 22
+   82  telnet 10.124.18.220 20
+   83  telnet 10.124.18.220 1234
+   84  hostname
+   85  hostname -s
+   86  hostname -n
+   87  hostname -f
+   88  man fdisk
+   89  echo hola 
+   90  pwd
+   91  ls /
+   92  alias my_year="call 2017"
+   93  cal
+   94  cal 2017
+   95  alias my_year="cal 2017"
+   96  my year
+   97  my_year
+   98  dpkg --get-selections | grep linux
+   99  which ls
+  100  ls -l `which ls`
+  101  ls /home
+  102  which hylafax
+  103  ls -lh
+  104  history
+  105  man ls
+  106  ls -w 10
+  107  ls -t 10
+  108  uname
+  109  uname -a
+  110  uname -n
+  111  hostame
+  112  uname -n -o
+  113  pwd
+  114  cat 
+  115  ip -4 addr
+  116  ifconfig
+  117  ip -4 addr
+  118  echo $VAR1
+  119  EXIT
+  120  exit
+  121  echo $VAR1
+  122  otro_VAR=casa
+  123  exit
+  124  echo $proyectos
+  125  exit
+  126  bash
+  127  VAR=caso
+  128  VAR1=caso
+  129  echo $VAR1
+  130  VAR1=otro
+  131  echo $VAR1
+  132  echo Este es $VAR1 caso
+  133  echo 'Este es $VAR1 caso'
+  134  VAR1=5 
+  135  VAR2=otro
+  136  mi_var=caso
+  137  echo $VAR1 esta es una salida $VAR2 en el $mi_var
+  138  bash
+  139  export VAR1
+  140  bash
+  141  echo $otro_VAR
+  142  set | less
+  143  history
+  144  env |grep VAR
+  145  set |grep VAR
+  146  set |grep -i VAR
+  147  env | less 
+  148  mkdir $HOME/prueba1
+  149  ls $HOME
+  150  cd /etc/apt
+  151  echo $HOME
+  152  mkdir /home/estudiantes/prueba1/prueba2
+  153  ls $HOME/prueba1
+  154  tree $HOME/prueba
+  155  tree $HOME/prueba1
+  156  cd
+  157  ls *.txt
+  158  VAR1= `ls *.txt`
+  159  VAR1=`ls *.txt`
+  160  echo $VAR1
+  161  VAR=$(ls *.txt)
+  162  echo $VAR
+  163  PROJECT=$(pwd)
+  164  echo $PROJECT 
+  165  mkdir $PROJECT/otro
+  166  nano prog1.sh 
+  167  mv prog1.sh /tmp/
+  168  cd /tmp/
+  169  ls
+  170  chmod 750 prog1.sh 
+  171  ls
+  172  ls -l
+  173  ./prog1.sh 
+  174  ls
+  175  nano prog1.sh 
+  176  ./prog1.sh 
+  177  mv prog1.sh programa_identificador.sh
+  178  ./programa_identificador.sh 
+  179  echo $PATH 
+  180  CD
+  181  cd
+  182  ls
+  183  mkdir bin
+  184  ls
+  185  cp /tmp/programa_identificador.sh bin/
+  186  ls bin
+  187  programa_identificador.sh 
+  188  mv bin/programa_identificador.sh bin/prog1
+  189  ls bin
+  190  prog1 
+  191  PATH=/opt/bin:$PATH
+  192  echo $PATH
+  193  nano .bashrc 
+  194  cowsay hola admin!
+  195  nano .bashrc 
+  196  source .bashrc 
+  197  echo $proyectos
+  198  nano .bashrc 
+  199  history
+  200  cd /tmp/
+  201  dd if=dev/zero of=tmp/data.out bs=1 count=12
+  202  dd if=/dev/zero of=tmp/data.out bs=1 count=12
+  203  dd if=/dev/zero of=/tmp/data.out bs=1 count=12
+  204  split -b 2 data.out
+  205  ls -l
+  206  cat xa* > data2.out
+  207  ls -l
+  208  split -n 4 data.out salidas.
+  209  ls
+  210  history
+  211  ls -l
+  212  dmesg | head -n3
+  213  dmesg | head -n 3
+  214  dmesg | head -n 3 | nl
+  215  dmesg | head -n 10 | nl
+  216  dmesg |wc
+  217  cat /tmp/dmseg.log | head -n 3 |nl
+  218  cat /tmp/dmesg.log | head -n 3 |nl
+  219  less /etc/passwd
+  220  less /etc/shadow
+  221  cat /etc/passwd
+  222  cut -d":" -f1,4 /etc/passwd
+  223  tail /etc/passwd
+  224  history
+  225  cp .bash_history Documentos/history-clase1.txt
+  226  apropos make links
+  227  exit
+  228  io
+  229  id
+  230  man fdisk
+  231  cd /dev/
+  232  ls
+  233  ls sd
+  234  man ls
+  235  man vim
+  236  dmesg | less 
+  237  man ln 
+  238  su - academia
+  239  su - academia
+  240  cd /tmp/
+  241  ls
+  242  cd test/
+  243  ls
+  244  tree
+  245  cd folder1
+  246  ls
+  247  cd ..
+  248  rm -r folder1
+  249  ls
+  250  sudo rm -r folder1
+  251  ls
+  252  cd folder
+  253  cd folder1
+  254  ls
+  255  cd ..
+  256  tree
+  257  cp folder1/folder1/proyecto/ folder2
+  258  cp -r folder1/folder1/proyecto/ folder2
+  259  sudo cp -r folder1/folder1/proyecto/ folder2
+  260  su - academia
+  261  pwd
+  262  ls
+  263  find .
+  264  find . -name Descarga
+  265  find . -name Descargas
+  266  find /home -name Descargas
+  267  locate Descargas
+  268  find . -name 'Des'
+  269  cd 
+  270  mkdir Descuentos
+  271  find . -name 'Des'
+  272  ls
+  273  find . -name 'Des*'
+  274  find . -name 'De*' -o -name 'Doc*'
+  275  find . -iname 'De*' -o -name 'Doc*'
+  276  find /var/log/ -size +1G
+  277  find /name '*.conf' -ok rm {} \;
+  278  find / -name '*.conf' -ok rm {} \;
+  279  whereis grep
+  280  whereis -m grep
+  281  whereis -b grep
+  282  whereis -b grep | cut -d " " -f2
+  283  whereis -b grep | cut -d ":" -f1
+  284  whereis -b grep | cut -d ":" -f2
+  285  whereis -bm ls tr
+  286  whereis -bm ls tr -m gcc
+  287  whereis passwd
+  288  whereis -b passwd
+  289  which passwd
+  290  whereis -m passwd
+  291  whereis bash
+  292  which ping
+  293  which -a ping
+  294  cd /bin/
+  295  ls
+  296  cd
+  297  ls
+  298  cd bin/
+  299  ls
+  300  type echo
+  301  which echo
+  302  type -a echo
+  303  type ls
+  304  type -a ls
+  305  type -a grep
+  306  vim file1
+  307  cd
+  308  ls
+  309  mkdir test
+  310  cd test/
+  311  vim file1
+  312  vin /etc/passwd
+  313  vim /etc/passwd
+  314  cd/tm
+  315  cd /tmp/
+  316  mkdir test
+  317  su - academia
+  318  ls
+  319  mkdir testr
+  320  rm -r testr/
+  321  mkdir test
+  322  cd test/
+  323  mkdir {1,2}
+  324  ls
+  325  rm -r 1
+  326  rm -r 2
+  327  mkdir folder {1,2}
+  328  ls
+  329  rm r *
+  330  rm -r 1
+  331  rm -r 2
+  332  rm -r folder
+  333  ls
+  334  mkdir folder1
+  335  mkdir folder2
+  336  ls
+  337  mkdir -p folder1/proyectos/acueducto
+  338  trewe
+  339  tree
+  340  cp -r folder1/proyectos/ folder2
+  341  tree
+  342  mkdir -p folder1/proyectos/acueducto/administracion/empleados/otros
+  343  tree
+  344  cp -r folder1/proyectos/ folder2
+  345  tree
+  346  cp -r folder1/proyectos/ folder2/acueducto
+  347  tree
+  348  touch hola
+  349  tree
+  350  ls
+  351  ls -l
+  352  dd -if=/dev/zero of=hola bs=1 count=100
+  353  dd if=/dev/zero of=hola bs=1 count=100
+  354  ls
+  355  ls -l
+  356  cp hola folder1
+  357  tree
+  358  du -l folder1
+  359  du -lb folder1
+  360  ls -l
+  361  ls
+  362  ls -l
+  363  tree
+  364  rm hola
+  365  tree
+  366  cd folder
+  367  cd folder1
+  368  ls
+  369  rm hola
+  370  ls
+  371  cd ..
+  372  touch -p folder1/proyectos/acueducto/file-{1,2,3}
+  373  touch folder1/proyectos/acueducto/file-{1,2,3}
+  374  cd folder1/proyectos/acueducto/
+  375  ls
+  376  cd ..
+  377  tree
+  378  rm -r folder2
+  379  touch folder1/proyectos/acueducto/administracion/empleados/file-{casa,perro,gato}
+  380  tree
+  381  #Revisar lineas anteriores
+  382  #comentario: Revisar lineas anteriores
+  383  history > hist
+  384  tree
+  385  file hist 
+  386  cd /usr/bin/
+  387  ls
+  388  ls -l
+  389  ls -l w*
+  390  ls -l w??
+  391  ls -l w 
+  392  ls -l w???*
+  393  ls -l w??[ba]*
+  394  ls -l w??[a-d]*
+  395  echo w?
+  396  echo w??
+  397  echo w???
+  398  echo [!a-v]*
+  399  echo [!A-Va-v]*[1-9]*.txt
+  400  cd
+  401  su - academia
+  402  cd test/
+  403  cd misc/
+  404  history > history_clase2.txt
