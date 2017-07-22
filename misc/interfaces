@@ -8,6 +8,8 @@ eno1      Link encap:Ethernet  direcciónHW 8c:dc:d4:57:73:7f
           Bytes RX:62246901 (62.2 MB)  TX bytes:7033081 (7.0 MB)
           Interrupción:20 Memoria:f7c00000-f7c20000 
 
+
+
 lo        Link encap:Bucle local  
           Direc. inet:127.0.0.1  Másc:255.0.0.0
           Dirección inet6: ::1/128 Alcance:Anfitrión
