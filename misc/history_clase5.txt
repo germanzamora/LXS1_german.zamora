@@ -1,0 +1,855 @@
+    1  su - academia
+    2  exit
+    3  su - academia 
+    4  exit
+    5  echo $var3
+    6  modprobe vboxdrv
+    7  #modprobe vboxdrv
+    8  vboxdrv
+    9  var=1
+   10  echo var
+   11  echo $var
+   12  echo {$var}
+   13  var2=2
+   14  echo $var2+$var1
+   15  echo $var2+$var
+   16  result=$var+$var2
+   17  echo $result
+   18  clear
+   19  var=1
+   20  var2=2
+   21  export var2
+   22  export var3=123
+   23  echo $var3
+   24  set
+   25  clear
+   26  echo ${PATH}
+   27  clear
+   28  tail -f .bash_history 
+   29  ls -l
+   30  tail -f .bash_history 
+   31  exit
+   32  tail -f .bash_history 
+   33  tail -f .bash_history >/home/estudiantes/tail.txt
+   34  exit
+   35  tail -f .bash_history 
+   36  tail -f .bash_history clear
+   37  clear
+   38  clear
+   39  exit
+   40  tail -f .bash_history 
+   41  history
+   42  bash_profile
+   43  echo bashrc
+   44  bashrc
+   45  apt install terminator
+   46  clear
+   47  cat .bashrc
+   48  ls -l
+   49  man ls
+   50  ls -a
+   51  man cal
+   52  cal
+   53  man echo
+   54  clear
+   55  history >history.txt
+   56  less
+   57  less history.txt
+   58  man grep
+   59  grep -clear -history.txt
+   60  grep --help
+   61  grep clear history.txt
+   62  man 5
+   63  man 5 passwd
+   64  man passwd
+   65  man -k passwd
+   66  man -f passwd
+   67  man 1 passwd
+   68  whatis passwd
+   69  info
+   70  info ls 
+   71  pwd
+   72  sudo su
+   73  su - soporte
+   74  su - academia
+   75  ip -4 addr
+   76  su soporte
+   77  ls ..
+   78  su - academia
+   79  apt-cache show mailutils
+   80  su - academia
+   81  telnet 10.124.18.220 22
+   82  telnet 10.124.18.220 20
+   83  telnet 10.124.18.220 1234
+   84  hostname
+   85  hostname -s
+   86  hostname -n
+   87  hostname -f
+   88  man fdisk
+   89  echo hola 
+   90  pwd
+   91  ls /
+   92  alias my_year="call 2017"
+   93  cal
+   94  cal 2017
+   95  alias my_year="cal 2017"
+   96  my year
+   97  my_year
+   98  dpkg --get-selections | grep linux
+   99  which ls
+  100  ls -l `which ls`
+  101  ls /home
+  102  which hylafax
+  103  ls -lh
+  104  history
+  105  man ls
+  106  ls -w 10
+  107  ls -t 10
+  108  uname
+  109  uname -a
+  110  uname -n
+  111  hostame
+  112  uname -n -o
+  113  pwd
+  114  cat 
+  115  ip -4 addr
+  116  ifconfig
+  117  ip -4 addr
+  118  echo $VAR1
+  119  EXIT
+  120  exit
+  121  echo $VAR1
+  122  otro_VAR=casa
+  123  exit
+  124  echo $proyectos
+  125  exit
+  126  bash
+  127  VAR=caso
+  128  VAR1=caso
+  129  echo $VAR1
+  130  VAR1=otro
+  131  echo $VAR1
+  132  echo Este es $VAR1 caso
+  133  echo 'Este es $VAR1 caso'
+  134  VAR1=5 
+  135  VAR2=otro
+  136  mi_var=caso
+  137  echo $VAR1 esta es una salida $VAR2 en el $mi_var
+  138  bash
+  139  export VAR1
+  140  bash
+  141  echo $otro_VAR
+  142  set | less
+  143  history
+  144  env |grep VAR
+  145  set |grep VAR
+  146  set |grep -i VAR
+  147  env | less 
+  148  mkdir $HOME/prueba1
+  149  ls $HOME
+  150  cd /etc/apt
+  151  echo $HOME
+  152  mkdir /home/estudiantes/prueba1/prueba2
+  153  ls $HOME/prueba1
+  154  tree $HOME/prueba
+  155  tree $HOME/prueba1
+  156  cd
+  157  ls *.txt
+  158  VAR1= `ls *.txt`
+  159  VAR1=`ls *.txt`
+  160  echo $VAR1
+  161  VAR=$(ls *.txt)
+  162  echo $VAR
+  163  PROJECT=$(pwd)
+  164  echo $PROJECT 
+  165  mkdir $PROJECT/otro
+  166  nano prog1.sh 
+  167  mv prog1.sh /tmp/
+  168  cd /tmp/
+  169  ls
+  170  chmod 750 prog1.sh 
+  171  ls
+  172  ls -l
+  173  ./prog1.sh 
+  174  ls
+  175  nano prog1.sh 
+  176  ./prog1.sh 
+  177  mv prog1.sh programa_identificador.sh
+  178  ./programa_identificador.sh 
+  179  echo $PATH 
+  180  CD
+  181  cd
+  182  ls
+  183  mkdir bin
+  184  ls
+  185  cp /tmp/programa_identificador.sh bin/
+  186  ls bin
+  187  programa_identificador.sh 
+  188  mv bin/programa_identificador.sh bin/prog1
+  189  ls bin
+  190  prog1 
+  191  PATH=/opt/bin:$PATH
+  192  echo $PATH
+  193  nano .bashrc 
+  194  cowsay hola admin!
+  195  nano .bashrc 
+  196  source .bashrc 
+  197  echo $proyectos
+  198  nano .bashrc 
+  199  history
+  200  cd /tmp/
+  201  dd if=dev/zero of=tmp/data.out bs=1 count=12
+  202  dd if=/dev/zero of=tmp/data.out bs=1 count=12
+  203  dd if=/dev/zero of=/tmp/data.out bs=1 count=12
+  204  split -b 2 data.out
+  205  ls -l
+  206  cat xa* > data2.out
+  207  ls -l
+  208  split -n 4 data.out salidas.
+  209  ls
+  210  history
+  211  ls -l
+  212  dmesg | head -n3
+  213  dmesg | head -n 3
+  214  dmesg | head -n 3 | nl
+  215  dmesg | head -n 10 | nl
+  216  dmesg |wc
+  217  cat /tmp/dmseg.log | head -n 3 |nl
+  218  cat /tmp/dmesg.log | head -n 3 |nl
+  219  less /etc/passwd
+  220  less /etc/shadow
+  221  cat /etc/passwd
+  222  cut -d":" -f1,4 /etc/passwd
+  223  tail /etc/passwd
+  224  history
+  225  cp .bash_history Documentos/history-clase1.txt
+  226  apropos make links
+  227  exit
+  228  io
+  229  id
+  230  man fdisk
+  231  cd /dev/
+  232  ls
+  233  ls sd
+  234  man ls
+  235  man vim
+  236  dmesg | less 
+  237  man ln 
+  238  su - academia
+  239  su - academia
+  240  cd /tmp/
+  241  ls
+  242  cd test/
+  243  ls
+  244  tree
+  245  cd folder1
+  246  ls
+  247  cd ..
+  248  rm -r folder1
+  249  ls
+  250  sudo rm -r folder1
+  251  ls
+  252  cd folder
+  253  cd folder1
+  254  ls
+  255  cd ..
+  256  tree
+  257  cp folder1/folder1/proyecto/ folder2
+  258  cp -r folder1/folder1/proyecto/ folder2
+  259  sudo cp -r folder1/folder1/proyecto/ folder2
+  260  su - academia
+  261  pwd
+  262  ls
+  263  find .
+  264  find . -name Descarga
+  265  find . -name Descargas
+  266  find /home -name Descargas
+  267  locate Descargas
+  268  find . -name 'Des'
+  269  cd 
+  270  mkdir Descuentos
+  271  find . -name 'Des'
+  272  ls
+  273  find . -name 'Des*'
+  274  find . -name 'De*' -o -name 'Doc*'
+  275  find . -iname 'De*' -o -name 'Doc*'
+  276  find /var/log/ -size +1G
+  277  find /name '*.conf' -ok rm {} \;
+  278  find / -name '*.conf' -ok rm {} \;
+  279  whereis grep
+  280  whereis -m grep
+  281  whereis -b grep
+  282  whereis -b grep | cut -d " " -f2
+  283  whereis -b grep | cut -d ":" -f1
+  284  whereis -b grep | cut -d ":" -f2
+  285  whereis -bm ls tr
+  286  whereis -bm ls tr -m gcc
+  287  whereis passwd
+  288  whereis -b passwd
+  289  which passwd
+  290  whereis -m passwd
+  291  whereis bash
+  292  which ping
+  293  which -a ping
+  294  cd /bin/
+  295  ls
+  296  cd
+  297  ls
+  298  cd bin/
+  299  ls
+  300  type echo
+  301  which echo
+  302  type -a echo
+  303  type ls
+  304  type -a ls
+  305  type -a grep
+  306  vim file1
+  307  cd
+  308  ls
+  309  mkdir test
+  310  cd test/
+  311  vim file1
+  312  vin /etc/passwd
+  313  vim /etc/passwd
+  314  cd/tm
+  315  cd /tmp/
+  316  mkdir test
+  317  su - academia
+  318  ls
+  319  mkdir testr
+  320  rm -r testr/
+  321  mkdir test
+  322  cd test/
+  323  mkdir {1,2}
+  324  ls
+  325  rm -r 1
+  326  rm -r 2
+  327  mkdir folder {1,2}
+  328  ls
+  329  rm r *
+  330  rm -r 1
+  331  rm -r 2
+  332  rm -r folder
+  333  ls
+  334  mkdir folder1
+  335  mkdir folder2
+  336  ls
+  337  mkdir -p folder1/proyectos/acueducto
+  338  trewe
+  339  tree
+  340  cp -r folder1/proyectos/ folder2
+  341  tree
+  342  mkdir -p folder1/proyectos/acueducto/administracion/empleados/otros
+  343  tree
+  344  cp -r folder1/proyectos/ folder2
+  345  tree
+  346  cp -r folder1/proyectos/ folder2/acueducto
+  347  tree
+  348  touch hola
+  349  tree
+  350  ls
+  351  ls -l
+  352  dd -if=/dev/zero of=hola bs=1 count=100
+  353  dd if=/dev/zero of=hola bs=1 count=100
+  354  ls
+  355  ls -l
+  356  cp hola folder1
+  357  tree
+  358  du -l folder1
+  359  du -lb folder1
+  360  ls -l
+  361  ls
+  362  ls -l
+  363  tree
+  364  rm hola
+  365  tree
+  366  cd folder
+  367  cd folder1
+  368  ls
+  369  rm hola
+  370  ls
+  371  cd ..
+  372  touch -p folder1/proyectos/acueducto/file-{1,2,3}
+  373  touch folder1/proyectos/acueducto/file-{1,2,3}
+  374  cd folder1/proyectos/acueducto/
+  375  ls
+  376  cd ..
+  377  tree
+  378  rm -r folder2
+  379  touch folder1/proyectos/acueducto/administracion/empleados/file-{casa,perro,gato}
+  380  tree
+  381  #Revisar lineas anteriores
+  382  #comentario: Revisar lineas anteriores
+  383  history > hist
+  384  tree
+  385  file hist 
+  386  cd /usr/bin/
+  387  ls
+  388  ls -l
+  389  ls -l w*
+  390  ls -l w??
+  391  ls -l w 
+  392  ls -l w???*
+  393  ls -l w??[ba]*
+  394  ls -l w??[a-d]*
+  395  echo w?
+  396  echo w??
+  397  echo w???
+  398  echo [!a-v]*
+  399  echo [!A-Va-v]*[1-9]*.txt
+  400  cd
+  401  su - academia
+  402  cd test/
+  403  cd misc/
+  404  history > history_clase2.txt
+  405  git status 
+  406  cd ..
+  407  git status 
+  408  git add misc/history_clase2.txt 
+  409  git commit -m "history de clase 2"
+  410  git push origin master
+  411  git config --global user.name "German Zamora C"
+  412  git config --global user.mail "gezamora1@gmail.com"
+  413  cat ~/.gitconfig
+  414  cd test/
+  415  ls
+  416  rm file*
+  417  ls
+  418  mkdir src
+  419  mkdir docs
+  420  mkdir misc
+  421  mkdir tools
+  422  vim README.md
+  423  touch READMe.md
+  424  vim .gitignore
+  425  tree
+  426  rm -r READMe.md 
+  427  touch README.md
+  428  tree
+  429  vi .gitignore 
+  430  tree
+  431  touch {docs,src.misc.tools}/.gitignore
+  432  touch {docs,src,misc,tools}/.gitignore
+  433  tree -a
+  434  echo '*.swp' >> .gitignore 
+  435  cat .gitignore 
+  436  git init 
+  437  vi .gitignore 
+  438  cat .gitignore 
+  439  tree .git
+  440  git add --all
+  441  git status
+  442  git commit -m "Inicializacion del repo de LInux"
+  443  git config --global user.email "gezamora1@gmail.com"
+  444  git commit -m "Inicializacion del repo de LInux"
+  445  git log
+  446  ifconfig >misc/interfaces
+  447  dmesg > misc/kernel
+  448  df -lh > docs/espacios
+  449  tree
+  450  git status
+  451  git add misc/interfaces 
+  452  git add docs/espacios 
+  453  git status
+  454  git commit -m "Agrego archivos de espacios e interfaces"
+  455  git log 
+  456  cp /etc/apt/sources.list misc/
+  457  git status
+  458  vim docs/espacios 
+  459  git status
+  460  git diff docs/espacios
+  461  git status
+  462  git add docs/espacios 
+  463  git add misc/kernel 
+  464  git status
+  465  git commit -m "Modificacion del header de espacios y agrego archivo de kernel" 
+  466  git log
+  467  git remote add origin https://github.com/germanzamora/LXS1_german.zamora.git
+  468  git remote -v
+  469  git push -u origin master
+  470  git add misc/sources.list 
+  471  vim misc/interfaces 
+  472  git add misc/interfaces 
+  473  git commit -m "Agrego sources.list y modifico interfaces"
+  474  git push -u origin master
+  475  cd /tmp/
+  476  ls
+  477  git clone https://github.com/germanzamora/LXS1_german.zamora.git
+  478  ls
+  479  cd LXS1_german.zamora/
+  480  ls
+  481  tree
+  482  git status
+  483  git pull origin master
+  484  tree
+  485  ls -l out.*
+  486  exit
+  487  history
+  488  ps aux | less
+  489  ping localhost
+  490  jobs
+  491  top
+  492  ttop
+  493  htop
+  494  top
+  495  jobs
+  496  kill %1
+  497  jobs
+  498  ping localhost >/dev/null 
+  499  jobs
+  500  vim /tmp/algo.txt
+  501  jobs
+  502  kill %2
+  503  jobs
+  504  kill %
+  505  ls
+  506  jobs
+  507  kill %1
+  508  kill %2
+  509  kill %3
+  510  jobs
+  511  kill -l
+  512  fg %+
+  513  jobs
+  514  ps -u estudiantes
+  515  kill -9 5346
+  516  jobs
+  517  kill -9 5346
+  518  jobs
+  519  ping localhost > /dev/null &
+  520  jobs
+  521  top
+  522  htop
+  523  su - academia
+  524  htop
+  525  free -lh
+  526  uptime
+  527  w
+  528  last
+  529  cat /proc/cpuinfo 
+  530  history
+  531  ifconfig
+  532  exit
+  533  sh-keygen -t rsa
+  534  ssh-keygen -t rsa
+  535  cd .ssh/
+  536  ls -l
+  537  cat id_rsa
+  538  ls -l
+  539  cat id_rsa.pub 
+  540  ssh-copy-id user1@10.124.18.221
+  541  ssh@10.124.18.221
+  542  ssh user1@10.124.18.221
+  543  cd test/
+  544  ls
+  545  git clone https://github.com/germanzamora/LXS1_german.zamora.git
+  546  ls
+  547  cd LXS1_german.zamora/
+  548  ls
+  549  cd misc/
+  550  ls
+  551  history > history_clase3.txt 
+  552  git status
+  553  git commit -m "History de clase 3"
+  554  git add history_clase3.txt 
+  555  git commit -m "History de clase 3"
+  556  git push origin master 
+  557  cd /var/lo
+  558  cd /var/log
+  559  ls
+  560  id
+  561  newgrp academia
+  562  touch file-2
+  563  ls -l
+  564  ## como cambiar permisos para algunos archivos en las carpetas find registros/ -name '*.c' -exec chmod 750 {} \;
+  565  which passwd 
+  566  ls -l which passwd
+  567  cd /tmp/
+  568  touch file1
+  569  ls -l
+  570  id
+  571  touch file-2
+  572  ls -l 
+  573  id
+  574  newgrp web-admin
+  575  su - academia
+  576  cd /tmp/
+  577  ls
+  578  ls -ld informes/
+  579  ls -ld informes/ ; ls -l informes/*
+  580  exit
+  581  passwd user1
+  582  su - academia
+  583  cd /tmp/
+  584  mkdir test
+  585  cd test/
+  586  mkdir -p registros/folder-{a.b.c}/file-{1,2,3}
+  587  tree
+  588  ls
+  589  cd registros/
+  590  ls
+  591  rm *
+  592  cd ..
+  593  ls
+  594  rm*
+  595  rm *
+  596  ls
+  597  touch registros/folder-{a,b,c}/file-{1,2,3}
+  598  ls
+  599  cd registros/
+  600  ls
+  601  mkdir foldera
+  602  mkdir folderb
+  603  mkdir folderc
+  604  ls
+  605  cd..
+  606  cd ..
+  607  cd registros/
+  608  cd foldera
+  609  echo file-1
+  610  cd ..
+  611  cd folderb
+  612  echo file-2
+  613  cd ..
+  614  cd folderc
+  615  echo file-3
+  616  tree
+  617  cd ..
+  618  tree
+  619  mkdir -p registros/folder-{a,b,c}/file-{1,2,3}
+  620  tree
+  621  tar -cf registros.tar registros/
+  622  ls -l
+  623  tar -czf registros-comp.tar.gz registros
+  624  ls -l
+  625  file registros.tar 
+  626  file registros-comp.tar.gz 
+  627  ls
+  628  rm -r registros
+  629  ls -l
+  630  tar -x registros.tar 
+  631  tar -xf registros.tar 
+  632  ls
+  633  tree
+  634  rm -r foldera
+  635  rm -r registros
+  636  tar -xzf registros-comp.tar.gz 
+  637  ls
+  638  tree
+  639  tar -tf registros-comp.tar.gz 
+  640  tar vtf registros-comp.tar.gz 
+  641  rm -r registros
+  642  ls
+  643  mkdir ../data
+  644  tar -xf registros.tar -C /tmp/data/
+  645  rm -r /tmp/data/registros/
+  646  tree
+  647  cd ..
+  648  tree
+  649  ls
+  650  cd data/
+  651  ls
+  652  cd ..
+  653  ip -4 addr
+  654  ssh -v estudiantes@10.124.18.124
+  655  ping 10.124.18.124
+  656  ssh -v estudiantes6410.124.18.126
+  657  cd test/
+  658  touch file1
+  659  dmesg > file1
+  660  ls -l
+  661  gzip file1 
+  662  ls -l
+  663  dmesg > file2
+  664  ls -l
+  665  gzip -c file2 > file2.gz
+  666  ls -l
+  667  gunzip file1.gz 
+  668  ls -l
+  669  gunzip -l file2.gz 
+  670  tar -xf registros.tar 
+  671  ls
+  672  gunzip -r registros
+  673  ls -l
+  674  gzip -r registros
+  675  rm -r registros
+  676  ls
+  677  bzip2 file1
+  678  ls -l
+  679  zip registros.zip registros
+  680  zip registros.zip registros/
+  681  ls
+  682  tar -xf registros.tar 
+  683  ls
+  684  cd registros/
+  685  ls
+  686  cd folder-a
+  687  ls
+  688  dmesg > file1
+  689  ifconfig >file2
+  690  cat /var/log syslog > file3
+  691  cat /var/log/syslog > file3
+  692  xz -z *
+  693  ls
+  694  su - academia
+  695  cd
+  696  ls
+  697  cd
+  698  su - user1
+  699  su - academia
+  700  cd /etc/pam.d/
+  701  ls
+  702  cd /tmp/
+  703  mkdir /tmp/prueba ; cd /tmp/prueba ; touch file-1 ; mkdir folder-1 ; ls -l
+  704  umask ; umask -S
+  705  touch file-2
+  706  mkdir folder-2
+  707  ls -l
+  708  stat 'pwd' 
+  709  stat file1
+  710  stat file-1
+  711  stat $(pwd)
+  712  clear
+  713  cd /etc/rc2.d/
+  714  ls
+  715  ls -l
+  716  cd /tmp/
+  717  history
+  718  su academia
+  719  P6p3.aas
+  720  exit
+  721  su academia
+  722  p6p3.aas
+  723  su academia
+  724  exit
+  725  dmesg 
+  726  mount | gfrep sde1
+  727  dmesg
+  728  mount | grep sde1
+  729  cd /media/estudiantes/DEBIAN\ 8_6_/
+  730  ls
+  731  dd if=/dev/zero of=data.out bs=100M count=3
+  732  ls
+  733  rm data
+  734  dd if=/dev/zero of=data.out bs=1M count=100
+  735  dd if=/dev/zero of=data.out bs=1M count=300
+  736  sync
+  737  exit
+  738  su academia
+  739  cat /proc/cpuinfo | less
+  740  ls cpu
+  741  lscpu
+  742  cat /proc/meminfo | less
+  743  free
+  744  free -h
+  745  df -lh
+  746  su academia
+  747  su - academia
+  748  cd /proc/
+  749  ls
+  750  cd
+  751  su - academia
+  752  exit
+  753  mount | grep sde1
+  754  su - academia
+  755  exit
+  756  su - academia
+  757  cd /etc/init
+  758  c ..
+  759  cd /etc/init.d/
+  760  ls
+  761  less ssh
+  762  cd ..
+  763  runlevel
+  764  cd rc5.d/
+  765  ls
+  766  ls -lh
+  767  cd /var/lo
+  768  cd /var/log
+  769  ls
+  770  ps aux | grep rsyslog
+  771  head kern.log
+  772  head syslog
+  773  last -f wtmp
+  774  last -f wtmp.1
+  775  ssh academia@10.124.18.77
+  776  su - academia
+  777  git
+  778  cd
+  779  cd Documentos/
+  780  ls
+  781  rm history-clase1.txt 
+  782  ls
+  783  gitclone https://github.com/germanzamora/LXS1_german.zamora.git
+  784  git clone https://github.com/germanzamora/LXS1_german.zamora.git
+  785  ls
+  786  tree
+  787  cd LXS1_german.zamora/
+  788  tree
+  789  cd src/
+  790  ls
+  791  git status
+  792  vim tmp_script.sh
+  793  ls
+  794  chmod +x tmp_script.sh 
+  795  ls -l
+  796  chmod -x tmp_script.sh 
+  797  chmod u=rwx tmp_script.sh 
+  798  chmod 750 tmp_script.sh 
+  799  ls -lh
+  800  ./tmp_script.sh 
+  801  vim tmp_script.sh 
+  802  ./tmp_script.sh 
+  803  vim tmp_script.sh 
+  804  ./tmp_script.sh 
+  805  su - academia
+  806  vim tmp_script.sh 
+  807  ./tmp_script.sh 
+  808  gitstatus
+  809  git status
+  810  git add tmp_script.sh 
+  811  git status
+  812  git commit -m "Agrego mi plantilla para scripts de root"
+  813  git status
+  814  git log
+  815  git push origin master
+  816  ls
+  817  vim tmp_script.sh 
+  818  ./tmp_script.sh 
+  819  vim tmp_script.sh 
+  820  ./tmp_script.sh 
+  821  vim tmp_script.sh 
+  822  ./tmp_script.sh 
+  823  vim tmp_script.sh 
+  824  ./tmp_script.sh 
+  825  vim tmp_script.sh 
+  826  ./tmp_script.sh 
+  827  vim tmp_script.sh 
+  828  git add tmp_script.sh 
+  829  git commit -m "Agrego solicitud de informacion de usuario"
+  830  git push origin master
+  831  vim tmp_script.sh 
+  832  chmod +x tmp_script.sh 
+  833  ./tmp_script.sh 
+  834  cd ..
+  835  cd misc/
+  836  exit
+  837  cd /home/
+  838  ls
+  839  cd estudiantes/
+  840  ls
+  841  cd Documentos/
+  842  ls
+  843  cd LXS1_german.zamora/
+  844  ls
+  845  cd src/
+  846  ls
+  847  ./tmp_script.sh 
+  848  exit
+  849  cd Documentos/
+  850  ls
+  851  cd LXS1_german.zamora/
+  852  cd misc/
+  853  ls
+  854  hisory > history_clase5.txt
+  855  history > history_clase5.txt

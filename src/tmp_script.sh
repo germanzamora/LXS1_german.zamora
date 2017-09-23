@@ -21,7 +21,7 @@ echo -en "Escriba su correo electronico > "
 read EMAIL
 
 
-echo "Hola $NOMBRE, este es su correo [${GREEN}$EMAIL${RESET}] ? [s/n] "
+echo "Hola $NOMBRE, este es su correo [${GREEN}$EMAIL${RESET}]? [s/n] "
 read RESP
 
 if [[ s  == $RESP ]]
@@ -29,4 +29,7 @@ then
 	echo HOLA $NOMBRE,su correo es $EMAIL
 fi
 
-
+echo -en "${YELLOW}Agregando configuracion de git para el usuario $NOMBRE${RESET}"
+sudo su - estudiantes -c "git config --global user.name \"$NOMBRE\"" 
+sudo su - estudiantes -c "git config --global user.email \"$EMAIL\""
+sudo su - estudiantes -c "git config --global core editor vim"
